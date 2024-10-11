@@ -29,15 +29,23 @@ echo '#############'
 sudo apt install libx11-dev libxinerama-dev libxft-dev libpam0g-dev libxcb-xkb-dev
 
 
+echo "######################"
+echo "# LY Display manager #"
+echo "######################"
+
+cd ~
+if [ ! -d .config/ ]; then
+  sudo mkdir .config/
+fi
+cd .config/
+git clone https://github.com/fairyglade/ly
 
 
 echo "################"
 echo "# DWM suckless #"
 echo "################"
 
-cd ~
-mkdir .config
-cd .config/
+cd ~/.config/
 git clone https://git.suckless.org/dwm
 git clone https://git.suckless.org/dmenu
 
