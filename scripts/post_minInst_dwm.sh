@@ -26,7 +26,9 @@ echo '#############'
 echo '# LibX etc. #'
 echo '#############'
 
-sudo apt install libx11-dev libxinerama-dev libxft-dev
+sudo apt install libx11-dev libxinerama-dev libxft-dev libpam0g-dev libxcb-xkb-dev
+
+
 
 
 echo "################"
